@@ -139,9 +139,13 @@ $132=500
 ##### GRBL
 
 https://github.com/gnea/grbl
+
 https://github.com/gnea/grbl/wiki/Grbl-v1.1-Configuration
+
 https://github.com/gnea/grbl/wiki/Grbl-v1.1-Laser-Mode
+
 https://github.com/gnea/grbl/wiki/Two-Axis-System-Considerations
+
 https://github.com/gnea/grbl/wiki/Wiring-Limit-Switches
 
 ##### Misc
