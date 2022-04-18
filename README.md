@@ -1,14 +1,16 @@
 # eTextile-Laser
 
-### Notes
+## Notes
 
-#### GRBL
+### GRBL
+
+#### Building the firmware
 
 ##### Clone GRBL source repository
 
-```
+````shell
 git clone https://github.com/gnea/grbl.git
-```
+````
 
 ##### Enter GRBL source
 
@@ -43,6 +45,94 @@ make flash PROGRAMMER="-c arduinon -p m328 -P /dev/ttyACM0"
 ````
 
 `avrdude` is needed for flashing the firmware
+
+#### Configuring the firmware
+
+These settings commands should be sent to the GRBL firmware only once after (re)flashing, they are saved in EEPROM.
+
+##### Invert port directions for X & Y axis
+
+```
+$3=3
+```
+
+##### Enable hard limits
+
+```
+$21=1
+```
+
+##### Enable homing cycle
+
+```
+$22=1
+```
+
+##### Invert homing directions for X & Y axis
+
+```
+$23=3
+```
+
+##### Increase homing seek rate
+
+```
+$25=2000
+```
+
+##### Enable laser mode
+
+```
+$32=1
+```
+
+##### Set steps/mm for X axis
+
+```
+$100=64
+```
+
+##### Set steps/mm for Y axis
+
+```
+$101=154
+```
+
+##### Increase max rate for X axis
+
+```
+$110=2500
+```
+
+##### Increase max rate for Y axis
+
+```
+$111=2500
+```
+
+##### Increase acceleration for X axis
+
+```
+$121=15
+```
+
+##### Increase acceleration for Y axis
+
+```
+$122=15
+```
+
+##### Set max travel for X axis
+
+```
+$131=1000
+```
+
+##### Set max travel for Y axis
+
+```
+$132=500
+```
 
 ## Links
 
