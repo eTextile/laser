@@ -21,7 +21,7 @@ cd grbl
 ##### Check out appropriate version & create a branch for it
 
 ````shell
-git checkout -b extextile-laser v1.1h.20190825
+git checkout -b etextile-laser v1.1h.20190825
 ````
 
 ##### Apply GRBL patch
