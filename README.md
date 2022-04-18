@@ -3,8 +3,7 @@
 ## Notes
 
 This project is based on waste reuse and recycling of an obsolete laser cutter commercialized dy https://www.proelsrl.it in the 90s
-The rebuild of the electronic is based on Arduino Uno running GRBL 1.1 extended with a custom shield.
-We use LaserWeb4 for as host application and it [lw.comm-server](https://github.com/LaserWeb/lw.comm-server "lw.comm-server web page") ruing on a raspberry-pi.
+The rebuild of the electronic is based on Arduino Uno running GRBL 1.1 extended with a custom shield connected on an raspberry-pi ruinng [LaserWeb4](https://github.com/LaserWeb).
 This industrial laser cutter is now fully operational.
 
 ````
